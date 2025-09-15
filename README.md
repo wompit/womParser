@@ -37,8 +37,10 @@ pip install pandas selenium undetected-chromedriver
 
 ```bash
 python scraper.py --input input.csv --output result.csv [опции]
-Аргументы
-Аргумент	Описание	По умолчанию
+```
+
+Аргументы CLI:
+```bash
 --input	обяз. CSV со ссылками (колонка url)	—
 --output	обяз. CSV для результата	—
 --profile-dir	Папка для профиля Chrome (сохраняет куки/сессии)	""
