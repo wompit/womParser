@@ -1,4 +1,4 @@
-# womScraper (//ww Bizin.eu)
+# womParser (//ww Bizin.eu)
 
 Инструмент для парсинга сайтов `*.bizin.eu`.  
 Извлекает название компании, сайт, e-mail (включая скрытые Cloudflare), страну и сохраняет результат в CSV.  
