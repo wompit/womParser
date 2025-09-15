@@ -68,13 +68,16 @@ python scraper.py --input companies.csv --output result.csv --profile-dir chrome
 
 ## 📊 Форматы данных
 
+Вход (input.csv):
 ```bash
-Вход (input.csv)
 url
 https://de.bizin.eu/firm123
 https://fr.bizin.eu/firm456
 https://pl.bizin.eu/firm789
-Выход (result.csv)
+```
+
+Выход (result.csv):
+```bash
 url,name,website,email,country
 https://de.bizin.eu/firm123,Example GmbH,https://example.com,info@example.com,Germany
 ```
