@@ -26,11 +26,16 @@
 git clone https://github.com/yourusername/bizin-scraper.git
 cd bizin-scraper
 pip install -r requirements.txt
+```
+
 Если файла requirements.txt нет, установите напрямую:
+```bash
 pip install pandas selenium undetected-chromedriver
+```
 
-🚀 Запуск
+## 🚀 Запуск
 
+```bash
 python scraper.py --input input.csv --output result.csv [опции]
 Аргументы
 Аргумент	Описание	По умолчанию
@@ -46,16 +51,22 @@ python scraper.py --input input.csv --output result.csv [опции]
 --batch-size	Сколько URL обрабатывать за один цикл	1200
 --restart-every	Перезапуск драйвера каждые N запросов	350
 --manual-cf	Ручное прохождение Cloudflare Turnstile (чекбокс)	False
+```
 
-📝 Примеры
+## 📝 Примеры
 
 Запуск в headless-режиме, без картинок, сохранение каждые 100 строк:
+```bash
 python scraper.py --input companies.csv --output result.csv --headless --disable-images --flush-every 100
+```
 С профилем Chrome:
+```bash
 python scraper.py --input companies.csv --output result.csv --profile-dir chrome_profile
+```
 
-📊 Форматы данных
+## 📊 Форматы данных
 
+```bash
 Вход (input.csv)
 url
 https://de.bizin.eu/firm123
@@ -64,8 +75,11 @@ https://pl.bizin.eu/firm789
 Выход (result.csv)
 url,name,website,email,country
 https://de.bizin.eu/firm123,Example GmbH,https://example.com,info@example.com,Germany
+```
 
-⚠️ Важно
+##⚠️ Важно
 
 При частых Cloudflare-челленджах используйте --manual-cf и проходите капчу вручную.
 Скрипт автоматически делает паузы и перезапуски, чтобы снизить риск блокировки.
+
+
