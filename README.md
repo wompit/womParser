@@ -77,7 +77,7 @@ url,name,website,email,country
 https://de.bizin.eu/firm123,Example GmbH,https://example.com,info@example.com,Germany
 ```
 
-##⚠️ Важно
+## ⚠️ Важно
 
 При частых Cloudflare-челленджах используйте --manual-cf и проходите капчу вручную.
 Скрипт автоматически делает паузы и перезапуски, чтобы снизить риск блокировки.
