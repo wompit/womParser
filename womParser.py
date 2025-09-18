@@ -1,3 +1,5 @@
+// main womParser
+
 import argparse, time, random, re, sys
 from pathlib import Path
 import pandas as pd
@@ -289,8 +291,8 @@ def main():
         print(f"▶ Уже в выходном: {len(done)} | Осталось: {len(urls)}")
 
     while urls:
-        batch = urls[:args.batch_size]     # ← исправлено
-        urls  = urls[args.batch_size:]     # ← исправлено
+        batch = urls[:args.batch_size]  
+        urls  = urls[args.batch_size:]    
         print(f"\n=== Новый цикл: {len(batch)} URL (осталось {len(urls)}) ===")
         cycle_process(
             batch, out_path,
@@ -312,4 +314,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
